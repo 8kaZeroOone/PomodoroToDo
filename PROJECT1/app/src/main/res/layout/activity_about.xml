@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AboutActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:contentDescription="logo"
+        android:padding="16dp"
+        app:srcCompat="@drawable/logo" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/version"
+        android:textAlignment="center"
+        android:textColor="@color/primaryTextColor" />
+
+    <android.support.design.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:cardBackgroundColor="@color/background"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="3dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/titleDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/description_text"
+                android:textAlignment="textStart"
+                android:textColor="@color/primaryTextColor" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titleDescription"
+                android:layout_margin="8dp"
+                android:text="@string/large_text"
+                android:textAlignment="textStart"
+                android:textColor="@color/primaryTextColorLight" />
+
+        </RelativeLayout>
+
+    </android.support.design.card.MaterialCardView>
+
+    <android.support.design.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:cardBackgroundColor="@color/background"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="3dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/titleDev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/developer"
+                android:textAlignment="textStart"
+                android:textColor="@color/primaryTextColor" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titleDev"
+                android:layout_margin="8dp"
+                android:text="@string/about_developer"
+                android:textAlignment="textStart"
+                android:textColor="@color/primaryTextColorLight" />
+
+        </RelativeLayout>
+
+    </android.support.design.card.MaterialCardView>
+
+    <android.support.design.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:cardBackgroundColor="@color/background"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="3dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/titleLib"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/libraries_title"
+                android:textAlignment="textStart"
+                android:textColor="@color/primaryTextColor" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/ess"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titleLib"
+                android:layout_margin="8dp"
+                android:text="@string/essLibrary"
+                android:textAlignment="textStart"
+                android:textColor="@color/primaryTextColorLight" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/fab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ess"
+                android:layout_margin="8dp"
+                android:text="@string/fabLibrary"
+                android:textAlignment="textStart"
+                android:textColor="@color/primaryTextColorLight" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/ia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fab"
+                android:layout_margin="8dp"
+                android:text="@string/iaLibrary"
+                android:textAlignment="textStart"
+                android:textColor="@color/primaryTextColorLight" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ia"
+                android:layout_margin="8dp"
+                android:text="@string/otherLibraries"
+                android:textAlignment="textStart"
+                android:textColor="@color/primaryTextColorLight" />
+
+        </RelativeLayout>
+
+    </android.support.design.card.MaterialCardView>
+
+</LinearLayout>

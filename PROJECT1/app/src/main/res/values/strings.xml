@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">PomodoroToDo</string>
+    <string name="timer_description">При запуске таймера у вас будет 25 минут на работу и 5 минут на перерыв.</string>
+    <string name="app_about">Тайм-менеджмент приложение</string>
+    <string name="about_developer">Линар Юнусов, Магнитогорск, Россия, 2019 год</string>
+    <string name="developer">Разработчик</string>
+    <string name="libraries_title">Использованные библиотеки</string>
+    <string name="essLibrary">EasySplashScreen library by Leonidas Maroulis</string>
+    <string name="fabLibrary">FAB library by Jerzy Chalupski</string>
+    <string name="otherLibraries">Также были использованы стандартные для каждого проекта библиотеки Google</string>
+    <string name="iaLibrary">IntentAnimation library by @hajiyevelnur92</string>
+    <string name="version">Версия продукта - 1.0.0</string>
+    <string name="prior1">Крайне важная задача</string>
+    <string name="prior2">Важная задача</string>
+    <string name="prior3">Маловажная задача</string>
+    <string name="description_text">Описание и цели разработки</string>
+    <string name="large_text">Данный программный продукт представляет собой список дел со встроенным таймером, основанным на методике "помидора".
+        Приложение может помочь пользователю организовать своё время. Также, при должном использовании встроенного таймера, приложение позволит поддерживать работоспособность пользователя на оптимальном уровне большую часть времени.</string>
+</resources>

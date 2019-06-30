@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddEditTaskActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_name"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:textColorHint="@color/primaryTextColorLight"
+            app:counterEnabled="true"
+            app:counterMaxLength="50"
+            app:errorEnabled="true">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Введите название задачи"
+                android:textColor="@color/primaryTextColor"
+                android:inputType="text"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_description"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:textColorHint="@color/primaryTextColorLight"
+            app:counterEnabled="true"
+            app:counterMaxLength="270"
+            app:errorEnabled="true"
+            android:layout_below="@+id/input_name">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Введите описание задачи"
+                android:textColor="@color/primaryTextColor"
+                android:inputType="textMultiLine" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/text_priority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_description"/>
+
+        <TextView
+            android:id="@+id/current_priority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_below="@+id/input_description"
+            android:layout_toEndOf="@+id/text_priority"/>
+
+    </RelativeLayout>
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        app:fab_icon="@drawable/ic_save_24dp"
+        app:fab_addButtonColorNormal="@color/colorAccent"
+        app:fab_addButtonColorPressed="@color/colorAccentDark"
+        app:fab_addButtonPlusIconColor="@color/secondaryTextColor"
+        app:fab_labelStyle="@style/fab_menu">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/priority3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/colorAccent"
+            app:fab_colorPressed="@color/colorAccentDark"
+            app:fab_icon="@drawable/ic_numeric_3_24dp"
+            app:fab_size="mini"
+            app:fab_title="@string/prior3"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/priority2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/colorAccent"
+            app:fab_colorPressed="@color/colorAccentDark"
+            app:fab_icon="@drawable/ic_numeric_2_24dp"
+            app:fab_size="mini"
+            app:fab_title="@string/prior2"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/priority1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/colorAccent"
+            app:fab_colorPressed="@color/colorAccentDark"
+            app:fab_icon="@drawable/ic_numeric_1_24dp"
+            app:fab_size="mini"
+            app:fab_title="@string/prior1"/>
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</android.support.design.widget.CoordinatorLayout>
